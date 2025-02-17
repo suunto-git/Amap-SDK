@@ -19,17 +19,31 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => 'Copyright', :text => 'Copyright © 2014 AutoNavi. All Rights Reserved.\n' }
 
   spec.source       = { :git => "https://github.com/suunto-git/Amap-SDK.git", :tag => "#{spec.version}" }
-
-  spec.vendored_frameworks = 'MAMapKit.framework', 'AMapFoundationKit.framework', 'AMapLocationKit.framework'
-
-  spec.public_header_files = "MAMapKit.framework/Headers/*.h", "AMapFoundationKit.framework/Headers/*.h", "AMapLocationKit.framework/Headers/*.h"
-
-  spec.resources    = "MAMapKit.framework/AMap.bundle",
-
+  
   spec.frameworks   = "QuartzCore", "CoreLocation", "SystemConfiguration", "CoreTelephony", "Security", "OpenGLES", "CoreText", "CoreGraphics", "GLKit"
 
   spec.libraries    = "z", "c++"
 
   spec.requires_arc = true
+
+  spec.subspec "MAMapKit" do |subspec|
+    subspec.vendored_frameworks      = 'MAMapKit.framework'
+    subspec.public_header_files      = 'MAMapKit.framework/Headers/*.h'
+    subspec.resources                = 'MAMapKit.framework/AMap.bundle'
+
+    subspec.dependency                 'AMap3DMap-NO-IDFA/AMapFoundationKit'
+  end
+
+  spec.subspec "AMapLocationKit" do |subspec|
+    subspec.vendored_frameworks     = 'AMapLocationKit.framework'
+    subspec.public_header_files     = 'AMapLocationKit.framework/Headers/*.h'
+    
+    subspec.dependency                'AMap3DMap-NO-IDFA/AMapFoundationKit'
+  end
+
+  spec.subspec "AMapFoundationKit" do |subspec|
+    subspec.vendored_frameworks     = 'AMapFoundationKit.framework'
+    subspec.public_header_files     = 'AMapFoundationKit.framework/Headers/*.h'
+  end
  
 end
