@@ -1,5 +1,5 @@
 # Amap-SDK
-Amap NO IDFA SDK V9.2.1
+Amap NO IDFA SDK V1.0.0
 
 
 Update the readme while update these SDKs.

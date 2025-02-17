@@ -1,8 +1,8 @@
 
 Pod::Spec.new do |spec|
 
-  spec.name         = "AMap3DMap-NO-IDFA"
-  spec.version      = "9.2.1"
+  spec.name         = "Amap-SDK-NO-IDFA"
+  spec.version      = "1.0.0"
   spec.summary      = "3D Map SDK for iOS by Autonavi."
 
   spec.description  = <<-DESC
@@ -31,14 +31,14 @@ Pod::Spec.new do |spec|
     subspec.public_header_files      = 'MAMapKit.framework/Headers/*.h'
     subspec.resources                = 'MAMapKit.framework/AMap.bundle'
 
-    subspec.dependency                 'AMap3DMap-NO-IDFA/AMapFoundationKit'
+    subspec.dependency                 'Amap-SDK-NO-IDFA/AMapFoundationKit'
   end
 
   spec.subspec "AMapLocationKit" do |subspec|
     subspec.vendored_frameworks     = 'AMapLocationKit.framework'
     subspec.public_header_files     = 'AMapLocationKit.framework/Headers/*.h'
     
-    subspec.dependency                'AMap3DMap-NO-IDFA/AMapFoundationKit'
+    subspec.dependency                'Amap-SDK-NO-IDFA/AMapFoundationKit'
   end
 
   spec.subspec "AMapFoundationKit" do |subspec|
