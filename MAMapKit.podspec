@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :http => "https://github.com/suunto-git/Amap-SDK/releases/download/1.0.0/MAMapKit.framework.zip" }
 
-  spec.vendored_frameworks = "MAMapKit.xcframework"
+  spec.vendored_frameworks = "MAMapKit.framework"
   
   spec.frameworks   = "QuartzCore", "CoreLocation", "SystemConfiguration", "CoreTelephony", "Security", "OpenGLES", "CoreText", "CoreGraphics", "GLKit"
 
