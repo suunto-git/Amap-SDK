@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |spec|
 
-  spec.name         = "MAMapKit-NO-IDFA-ST"
+  spec.name         = "AMap3DMap-NO-IDFA-ST"
   spec.version      = "1.0.0"
   spec.summary      = "MAMapKit 3D for iOS."
 
