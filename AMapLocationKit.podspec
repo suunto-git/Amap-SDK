@@ -1,13 +1,13 @@
 
 Pod::Spec.new do |spec|
 
-  spec.name         = "AMapLocationKit-NO-IDFA"
+  spec.name         = "AMapLocationKit-NO-IDFA-ST"
   spec.version      = "1.0.0"
-  spec.summary      = "3D Map SDK for iOS by Autonavi."
+  spec.summary      = "AMapLocationKit for iOS."
 
   spec.description  = <<-DESC
-                  3D Map SDK for iOS by Autonavi.
-                  Integrated AMapLocationKit-NO-IDFA.
+                  AMapLocation SDK for iOS by Autonavi.
+                  Integrated AMapLocationKit-NO-IDFA by Suunto.
                    DESC
 
   spec.homepage     = "http://lbs.amap.com/api/ios-sdk/summary/"
@@ -22,10 +22,10 @@ Pod::Spec.new do |spec|
 
   spec.vendored_frameworks = "AMapLocationKit.framework"
   
-  spec.frameworks   = "QuartzCore", "CoreLocation", "SystemConfiguration", "CoreTelephony", "Security", "OpenGLES", "CoreText", "CoreGraphics", "GLKit"
+  spec.frameworks   = "CoreLocation", "SystemConfiguration", "CoreTelephony", "Security", "ExternalAccessory"
 
 
-  spec.libraries    = "z", "c++"
+  spec.libraries    = "z"
 
   spec.requires_arc = true
 

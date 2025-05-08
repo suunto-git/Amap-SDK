@@ -1,10 +1,16 @@
 # Amap-SDK
-Amap NO IDFA SDK V1.0.0
+- Using same storage technology with SDS, add framework binaries to release asset field.
+- Using Cocoapods manager dependencies.
 
 
-Update the readme while update these SDKs.
 
-- AMap3DMap-NO-IDFA 9.2.1
-- AMapFoundation-NO-IDFA 1.6.9
-- AMapLocation-NO-IDFA 2.8.0
+Update Amap SDK steps:
+
+1. Create release, note Amap version info.
+2. Add newly framework with `.zip` to asset field.
+3. Using  ` gh api repos/suunto-git/Amap-SDK/releases`, fetch release list.
+4. Pick up newly `browser_download_url`.
+5. Update `spec.source` field in `MAMapKit.podspec` file.
+6. Refresh cache, and `Pod install` again.
+7. Successful.
 
