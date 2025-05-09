@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "AMapLocation-NO-IDFA-ST"
-  spec.version      = "1.1.0"
+  spec.version      = "1.2.0"
   spec.summary      = "AMapLocationKit for iOS."
 
   spec.description  = <<-DESC
@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
 
   spec.license      = { :type => 'Copyright', :text => 'Copyright © 2014 AutoNavi. All Rights Reserved.\n' }
 
-  spec.source       = { :http => "https://github.com/suunto-git/Amap-SDK/releases/download/1.1.0/AMap_iOS_Loc_Lib_V2.8.0.zip" }
+  spec.source       = { :http => "https://github.com/suunto-git/Amap-SDK/releases/download/1.2.0/AMap_iOS_Loc_Lib_V2.8.0.zip" }
 
   spec.vendored_frameworks = "AMapLocationKit.framework"
   

@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "AMap3DMap-NO-IDFA-ST"
-  spec.version      = "1.1.0"
+  spec.version      = "1.2.0"
   spec.summary      = "MAMapKit 3D for iOS."
 
   spec.description  = <<-DESC
@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
 
   spec.license      = { :type => 'Copyright', :text => 'Copyright © 2014 AutoNavi. All Rights Reserved.\n' }
 
-  spec.source       = { :http => "https://github.com/suunto-git/Amap-SDK/releases/download/1.1.0/AMap_iOS_3DMap_Lib_V9.2.1.zip" }
+  spec.source       = { :http => "https://github.com/suunto-git/Amap-SDK/releases/download/1.2.0/AMap_iOS_3DMap_Lib_V9.2.1.zip" }
 
   spec.vendored_frameworks = "MAMapKit.framework"
   
