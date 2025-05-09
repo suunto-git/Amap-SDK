@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "AMapLocation-NO-IDFA-ST"
-  spec.version      = "1.0.0"
+  spec.version      = "1.1.0"
   spec.summary      = "AMapLocationKit for iOS."
 
   spec.description  = <<-DESC
