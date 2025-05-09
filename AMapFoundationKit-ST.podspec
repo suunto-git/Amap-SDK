@@ -18,12 +18,11 @@ Pod::Spec.new do |spec|
 
   spec.license      = { :type => 'Copyright', :text => 'Copyright © 2014 AutoNavi. All Rights Reserved.\n' }
 
-  spec.source       = { :http => "https://github.com/suunto-git/Amap-SDK/releases/download/1.0.0/AMapFoundationKit.framework.zip" }
+  spec.source       = { :http => "https://github.com/suunto-git/Amap-SDK/releases/download/1.1.0/AMap_iOS_Foundation_NO_IDFA_Lib_V1.8.2.zip" }
 
   spec.vendored_frameworks = "AMapFoundationKit.framework"
   
   spec.frameworks   = "CoreLocation", "SystemConfiguration", "CoreTelephony", "Security"
-
 
   spec.libraries    = "z", "c++"
 
